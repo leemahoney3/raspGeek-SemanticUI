@@ -1,6 +1,6 @@
 # raspGeek-SemanticUI
 
-Web Developement Project 2 - WIT.
+Web Developement Assignment 2 - WIT.
 
 **Website Name:** raspGeek.
 
