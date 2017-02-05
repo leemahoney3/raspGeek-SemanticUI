@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    
+  	<title><% if (title) { %> <%= title %> - <% } %>RaspGeek | Your #1 Source for all things Pi!</title>
+
+    <link rel="stylesheet" href="/assets/css/semantic/semantic.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <section class="ui container">
+      <%- partial('includes/_header.ejs') %>
+      <%- partial('includes/_breadcrumb.ejs') %>
+  
+        <%- yield %>
+  
+      <%- partial('includes/_footer.ejs') %>
+    </section>
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="/assets/js/semantic/semantic.min.js"></script>
+    <script>
+      $('.ui.embed').embed();
+      $('.dropdown').dropdown();
+    </script>
+  </body>
+</html>

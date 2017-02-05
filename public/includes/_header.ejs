@@ -1,0 +1,64 @@
+<header class="ui segment noBorder">
+  
+  <div class="ui stackable grid">
+    
+    <div class="eight wide column">
+      <a id="logo" href="/index.html"><img src="/assets/img/logo.png" alt=""></a>
+    </div>
+    
+    <div class="ui middle aligned eight wide column">
+      <div class="ui right aligned">
+        <div class="ui four item stackable menu">
+          <a href="/index.html" <% if (page == 'index') { %> class="active item" <% } else { %> class="item" <% } %>>Home</a>
+          <a href="/blog.html" <% if (page == 'blog' || page == 'installRetroPie' || page == 'libreOffice' || page == 'whyPi') { %> class="active item" <% } else { %> class="item" <% } %>>Blog</a>
+                  
+            <div class="ui dropdown item <% if (page == 'meetThePis' || page == 'meetPi3' || page == 'meetPi2' || page == 'meetPiZero') { %>current<% } %>">
+                    
+              <div class="text">Meet the Pi's</div>
+              <i class="dropdown icon"></i>
+                    
+              <div class="menu">
+                <a href="/meetPi3.html" <% if (page == 'meetPi3') { %> class="active item" <% } else { %> class="item" <% } %>>
+                  Raspberry Pi 3
+                </a>
+                <a href="/meetPi2.html" <% if (page == 'meetPi2') { %> class="active item" <% } else { %> class="item" <% } %>>
+                  Raspberry Pi 2
+                </a>
+                <a href="/meetPiZero.html" <% if (page == 'meetPiZero') { %> class="active item" <% } else { %> class="item" <% } %>>
+                  Raspberry Pi Zero
+                </a>
+                <a href="/meetThePis.html" <% if (page == 'meetThePis') { %> class="active item end" <% } else { %> class="item end" <% } %>>
+                  <b>See All</b>
+                </a>
+              </div>
+
+            </div>
+                      
+            <div class="ui dropdown item end <% if (page == 'getStarted' || page == 'whereToBuy' || page == 'usefulLinks' || page == 'getInTouch') { %>current<% } %>">
+                  
+              <div class="text">Get Started</div>
+              <i class="dropdown icon"></i>
+                
+              <div class="menu">
+                  <a href="/whereToBuy.html" <% if (page == 'whereToBuy') { %> class="active item" <% } else { %> class="item" <% } %>>
+                    Where To Buy
+                  </a>
+                  <a href="/usefulLinks.html" <% if (page == 'usefulLinks') { %> class="active item" <% } else { %> class="item" <% } %>>
+                    Useful Links
+                  </a>
+                  <a href="/getInTouch.html" <% if (page == 'getInTouch') { %> class="active item" <% } else { %> class="item" <% } %>>
+                    Get In Touch
+                  </a>
+                  <a href="/getStarted.html" <% if (page == 'getStarted') { %> class="active item end" <% } else { %> class="item end" <% } %>>
+                    <b>See All</b>
+                  </a>
+              </div>
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
